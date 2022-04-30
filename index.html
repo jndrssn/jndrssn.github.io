@@ -15,102 +15,142 @@
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Jhon Anderssen</a>
-                <ul class="nav nav-pills"> 
-                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-            </div>
-      </nav>  
+ 
+    <!--Barra de navegación-->
+
+	<nav class="navbar fixed-top navbar-light bg-light">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Jhon Anderssen</a>
+	  </div>
+	</nav>
+  
       
-    <div class="card mat-card" id="first-card">     
-        <div id="profile-background"><img  src="img/yan-blanco-pier002.jpg" class="card-img-top img-fluid rounded"></div>
-        <div id="info" style="padding: 16px;">
+    <!--First-Card-->
+      
+    <div class="content">
+      
+        <div class="cardHeader">     
+          <img  src="img/yan-blanco-pier002.jpg" class="img-fluid profile-background">
             <div id="info-img"> 
-                <img class="profile-image" src="img/Logo.png" alt="Foto de perfil"></img>
-                <div class="btn-edit"><a href="#" class="btn-right"  class="fa fa-pen"><i class="fa fa-pen"></i></a></div>
-            </div>    
+                <img class="rounded-circle profile-image" src="img/Logo.png" alt="Foto de perfil"></img>
+                <i class="fa-regular fa-pen-to-square fa-xl icono"></i>
+            </div>   
+
              <div id="info-data">
-                <div>
-                    <h1>Jhon Anderssen</h1>
-                    <div id="info-company">Soporte IT en S y s t e m  3 2</div>
-                    <div id="info-contact">
-                        <span>Buenos Aires (Argentina)</span>
-                        <span><a href="#">Información de contacto</a></span>
+                <div class="row">
+                    <div class="col-8">
+                      	<h1>Jhon Anderssen</h1>
+                      	<div id="info-company">Soporte IT en S y s t e m  3 2</div>
+                      	<div id="info-contact">
+                        	  <span>Buenos Aires (Argentina)</span>
+                        	  <span><a href="#">Información de contacto</a></span>
+                        </div>
                     </div>
-                </div>
-                    <ul id="info-details">
-                        <li><a href="#">
-                            <img width="72px" src="img/8BITBABA-BANKSY-TAGGING_ROBOT.png" class="rounded float-start">
-                            <h2>S y s t e m  3 2</h2>
-                    </a></li>
-                    <li><a href="#">
-                            <img width="69px" src="img/8BITBABA-BASQUIAT-PEZ_DISPENSER.png" class="rounded float-start">
-                            <h2>Argentina Programa</h2>
-                        </a></li>
-                    </ul>   
-            </div> 
+                	<div class="col-4">
+                    	<a href="/img/8BITBABA-BANKSY-TAGGING_ROBOT.png" class="d-flex justify-content-end">
+                    		<img src="/img/8BITBABA-BANKSY-TAGGING_ROBOT.png" class="botonLogoInstitucion" width="64" height="64"/>
+                  	  	</a>
+                	</div>
+				</div>	
+            	
+				<button type="button" class="btn btn-primary">Tengo interés en</button>
+				<button type="button" class="btn btn-light">Añadir Sección</button>
+				<button type="button" class="btn btn-light">Más</button> 
+			 </div>
+		</div>
+		
             
-        <div class="container mt-3" id="info-actions">
-            <button type="button" class="btn btn-primary">Tengo interés en</button>
-            <button type="button" class="btn btn-light">Añadir Sección</button>
-            <button type="button" class="btn btn-light">Más</button>
+        
+    <!--Mat-Card-->
+    <div class="card mat-card">
+    <div class="row">
+      <div class="col ">
+        
+          <h2>Acerca de</h2>
+        
+        <div>
+          <p id="text-acercade">Ingeniero Químico. Doctor en Ingeniería Química pronto.</p>
         </div>
+        <div>
+          <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
         </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit float-end" onclick="cambiar_parrafo()">
+          <i class="fa fa-pen" aria-hidden="true"></i>          
+        </div><br>
+        <div class="btn-del float-end"><i class="fas fa-times" aria-hidden="true"></i></div>
+      </div>
+    </div>      
     </div>
-    
-<div class="card mat-card">
-    <div class="card-titles">
-        <h2>Acerca de</h2>
-        <div class="btn-edit" onclick="cambiar_parrafo()">
-            <a href="#" class="btn-right">
-                <i class="fa fa-pen"></i>
-            </a>
-        </div>
-    </div>
-    <div>
-        <p id="text-acercade">Programador Web Full Stack Junior</p>
-    </div>
-    <div>
-        <imput id="edit-acercade" text="text" oninput="myfunction2(this.value)" style="display.none"></imput>
-    </div>
-</div>   
-<div class="card mat-card">
-    <div class="card-titles">
-        <h2>Experiencia</h2>
-        <div class="btn-edit" onclick="cambiar_parrafo()">
-            <a href="#" class="btn-right">
-                <i class="fa fa-pen"></i>
-            </a>
-            <br>
-            <div class="progress">
-                <div class="progress-bar bg-success" style="width:20%"></div>
-            </div>
-            <br>
-            <div class="progress">
-                <div class="progress-bar bg-success" style="width:80%"></div>
-            </div>
-            <br>
-            <div class="progress">
-                <div class="progress-bar bg-success" style="width:70%"></div>
-            </div>
-            <br>
-        </div>
-    </div>
-</div>
+
+	<!--Mat-Card-->
+
+	<div class="card mat-card">
+	<div class="row">
+	  <div class="col ">
+		
+		  <h2>Experiencia</h2>
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+		  <div class="accordion-item">
+			<h2 class="accordion-header" id="flush-headingOne">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+				Accordion Item #1
+			  </button>
+			</h2>
+			<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+			</div>
+		  </div>
+		  <div class="accordion-item">
+			<h2 class="accordion-header" id="flush-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+				Accordion Item #2
+			  </button>
+			</h2>
+			<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+			</div>
+		  </div>
+		  <div class="accordion-item">
+			<h2 class="accordion-header" id="flush-headingThree">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+				Accordion Item #3
+			  </button>
+			</h2>
+			<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+			  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			</div>
+		  </div>
+		</div>
+	  <div class="col">
+		<div class="btn-edit float-end" onclick="cambiar_parrafo()">
+		  <i class="fa fa-pen" aria-hidden="true"></i>          
+		</div><br>
+		<div class="btn-del float-end"><i class="fas fa-times" aria-hidden="true"></i></div>
+	  </div>
+	</div>   
+	   
+	</div>
+	</div>
+	
+
+
+<!--Mat-Card-->
 
 <div class="card mat-card">
     <div class="card-titles">
         <h2>Proyectos</h2>
         <div class="btn-edit" onclick="cambiar_parrafo()">
             <a href="#" class="btn-right">
-                <i class="fa fa-pen"></i>
+                <i class="fa fa-pen float-end"></i>
             </a>
         </div>
+        <img src="img/EMMA_DOBLE-GUSTAV_KLIMT-THE_KISS.png" class="rounded float-start" alt="...">
+        <img src="img/os05.png" class="rounded float-end" alt="...">
+        <img src="img/8BITBABA-BASQUIAT-PEZ_DISPENSER.png" class="rounded mx-auto d-block" alt="...">
     </div>
+</div>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
