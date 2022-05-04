@@ -20,4 +20,3 @@ function cambiar_parrafo() {
     }
   });
 
-  
