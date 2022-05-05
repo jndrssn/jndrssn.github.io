@@ -10,7 +10,14 @@
     border-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin: 0%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.col-3{
+    margin-top: 2%;
 }
 
 div#info-data {
@@ -20,7 +27,9 @@ div#info-data {
 
 .mat-card {
     border-radius: 20px;
-    margin: 5px 0px;
+    margin: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
     padding: 16px;
     border-color: rgb(255, 255, 255);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
